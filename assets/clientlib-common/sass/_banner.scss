@@ -1,0 +1,57 @@
+.banner {
+  background-image: -moz-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
+  background-image: -webkit-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
+  background-image: -ms-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
+  position: relative;
+  overflow: hidden;
+  padding-top: 70px;
+
+  .banner-card {
+    background: none;
+    border: none;
+    font-family: 'Roboto Slab';
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    line-height: 21.87px;
+
+    @media screen and (min-width: $md) {
+      font-size: 18px;
+    }
+
+    @media screen and (min-width: $lg) {
+      padding-top: 72px;
+      font-size: 21px;
+    }
+  }
+
+  h1 {
+    font-family: 'Ailerons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $md) {
+      font-size: 45px;
+      margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: $lg) {
+      font-size: 60px;
+      margin-bottom: 120px;
+    }
+  }
+
+  h3 {
+    font-size: 18px;
+
+    @media screen and (min-width: $md) {
+      font-size: 21px;
+    }
+
+    @media screen and (min-width: $lg) {
+      font-size: 23px;
+    }
+  }
+}

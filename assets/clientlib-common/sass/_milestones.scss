@@ -1,0 +1,154 @@
+.milestones {
+
+    $icon-sizes: 40px;
+    text-align: center;
+
+    &-title {
+        padding-top: 100px;
+
+    }
+
+    &-wrapper {
+        margin: auto;
+        display: inline-block;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 24px;
+
+        .nav {
+            &-item {
+                position: relative;
+
+                &:before,
+                &:after {
+                    background: #ffc80a;
+                    height: 2px;
+                    width: 50%;
+                    content: "";
+                    position: absolute;
+                    top: 20px;
+                    z-index: -1;
+                }
+
+                &:before {
+                    left: 0;
+                }
+
+                &:after {
+                    right: 0;
+                }
+
+
+                &:first-child {
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                &:last-child {
+                    &:after {
+                        display: none;
+                    }
+                }
+
+                &.active-before {
+                    &:before {
+                        background-color: #8f75be;
+                    }
+                }
+
+                &.active-after {
+                    &:after {
+                        background-color: #8f75be;
+                    }
+
+                }
+
+                .nav-link {
+                    font-family: Roboto Slab;
+                    font-size: 14px;
+                    color: #212121;
+                    padding-top: 0;
+                    padding-bottom: 0;
+
+                    span {
+                        display: none;
+                    }
+
+                    .icon {
+                        width: $icon-sizes;
+                        height: $icon-sizes;
+                        color: white;
+                        background: #ffc80a;
+                        border-radius: 100%;
+                        font-size: 12px;
+                        margin: auto;
+                        z-index: 1;
+                        display: block;
+
+                        i {
+                            line-height: $icon-sizes;
+                        }
+                    }
+
+                    &.active,
+                    &:hover,
+                    &.active-way {
+                        .icon {
+                            color: white;
+                            background-color: #8f75be;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (min-width: $md) {
+            padding-top: 72px;
+
+            .nav {
+                &-item {
+                    display: inline;
+
+                    .nav-link {
+                        padding: 0 32px;
+
+                        .icon {
+                            margin-bottom: 16px;
+                        }
+
+                        span {
+                            display: block;
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    h4 {
+        font-family: ailerons;
+        padding-bottom: 16px;
+        font-size: 18px;
+    }
+
+    .tab-content {
+        font-size: 12px;
+        padding: 16px 0;
+
+        p {
+            color: #9fa3a7;
+        }
+
+        @media screen and (min-width: $sm) {
+            padding-top: 36px;
+        }
+        @media screen and (min-width: $md) {
+            padding-top: 72px;
+        }
+
+    }
+
+}

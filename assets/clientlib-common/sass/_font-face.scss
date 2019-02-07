@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Ailerons';
+    src: url('../../assets/clientlib-common/fonts/Ailerons.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BetterTogetherScript';
+    src: url('../../assets/clientlib-common/fonts/BetterTogetherScript.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../../assets/clientlib-common/fonts/Ubuntu.eot');
+	src: url('../../assets/clientlib-common/fonts/Ubuntu.eot?#iefix') format('embedded-opentype'),
+		url('../../assets/clientlib-common/fonts/Ubuntu.woff') format('woff'),
+		url('../../assets/clientlib-common/fonts/Ubuntu.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto Slab';
+	src: url('../../assets/clientlib-common/fonts/hinted-RobotoSlab-Light.eot');
+	src: url('../../assets/clientlib-common/fonts/hinted-RobotoSlab-Light.eot?#iefix') format('embedded-opentype'),
+		url('../../assets/clientlib-common/fonts/hinted-RobotoSlab-Light.woff') format('woff'),
+		url('../../assets/clientlib-common/fonts/hinted-RobotoSlab-Light.ttf') format('truetype'),
+		url('../../assets/clientlib-common/fonts/hinted-RobotoSlab-Light.svg#RobotoSlab-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}

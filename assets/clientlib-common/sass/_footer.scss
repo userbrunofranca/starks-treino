@@ -1,0 +1,111 @@
+footer{
+    background-color: #141414;
+    .footer-up{
+      background-color: #1A1A1A;
+    }
+
+    .page-list{
+        .page-item{
+            display: inline;
+            text-align: center;
+            margin-right: 56px;
+            color: white;
+            .link-page{
+                color: white;
+                text-decoration: none;
+                font-family: 'Roboto Slab';
+                font-size: 12px;
+            }
+        }
+    }
+
+    .editors-list{
+        padding-bottom: 10px;
+        padding-top: 10px;
+        @media screen and (max-width: $sm) {
+            padding-top: 12px;  
+            padding-bottom:12px;  
+            background-color: #1A1A1A;
+            border-bottom: 1px solid rgba(255,255,255,.3); 
+        }
+        .editor-name{
+            color: white;
+            display: inline;
+
+            a{
+                display: inline;
+                text-align: center;
+                color: white;
+                text-decoration: none;
+                font-family: 'Roboto Slab';
+                font-size: 12px;
+            }
+
+            img{
+                display: inline;
+                margin-left: auto;
+                margin-right: auto;
+                height: 30px;
+                width: auto;
+            }
+        }
+    }
+
+    .copyright-cit{
+        a{
+            display: inline;
+            text-align:center;
+            text-decoration: none;
+            font-family: 'Roboto Slab';
+            .logo-inferior {
+                height: 10px;
+                width: auto;
+                text-align: center;
+            }
+            
+        }
+        p{
+            text-align: center;
+            display: inline;
+            color: white;
+            font-family: 'Roboto Slab';
+            font-size: 12px;
+        }
+        @media screen and (max-width: $sm) {
+            margin-bottom: 8px;   
+            
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+
+    .social-list{
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+
+        @media screen and (max-width: $sm) {
+            justify-content: center !important;
+            padding-bottom: 12px;
+            padding-top: 12px;
+            
+            }
+
+        .social-item{
+            display: inline;
+
+            @media screen and (max-width: $sm) {
+                margin-right: 30px;
+                &:last-child{
+                    margin-right:0px;
+                }
+              }
+           
+            .social-link{
+                text-decoration: none;
+                color:white;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@import '../../dist/css/reset.css';
+@import '../../dist/css/base.css';
+@import '_variables.scss';
+@import '_font-face.scss';
+@import '_mixins.scss';
+@import '_header.scss';
+@import '_banner.scss';
+@import '_tecnologias.scss';
+@import '_milestones.scss';
+@import '_duvidas.scss';
+@import '_parallax.scss';
+@import '_footer.scss';
+
+h2 {
+    font-family: 'Ailerons';
+    font-size: 20px;
+
+    @media screen and (min-width: $md) {
+        font-size: 32px;
+    }
+
+    @media screen and (min-width: $lg) {
+        font-size: 45px;
+    }
+}
+
+p {
+    font-family: 'Roboto Slab';
+    font-size: 14px;
+    line-height: 18px;
+
+    @media screen and (min-width: $md) {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: $lg) {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,44 @@
+$xs: 320px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+@mixin MQ($canvas) {
+	@if $canvas == xs {
+	 @media only screen and (min-width: $xs) { @content; } 
+	}
+	@else if $canvas == sm {
+	 @media only screen and (min-width: $sm) { @content; } 
+	}
+	@else if $canvas == md {
+	 @media only screen and (min-width: $md) { @content; } 
+	}
+	@else if $canvas == lg {
+	 @media only screen and (min-width: $lg) { @content; } 
+	}
+	@else if $canvas == xl {
+	 @media only screen and (min-width: $xl) { @content; } 
+	}
+  }
+  
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
